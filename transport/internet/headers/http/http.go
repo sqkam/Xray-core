@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/buf"
+	"github.com/sqkam/xray-core/common/errors"
 )
 
 const (

@@ -8,25 +8,25 @@ import (
 	"time"
 
 	"github.com/pires/go-proxyproto"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/buf"
+	"github.com/sqkam/xray-core/common/dice"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/platform"
+	"github.com/sqkam/xray-core/common/retry"
+	"github.com/sqkam/xray-core/common/session"
+	"github.com/sqkam/xray-core/common/signal"
+	"github.com/sqkam/xray-core/common/task"
+	"github.com/sqkam/xray-core/core"
+	"github.com/sqkam/xray-core/features/dns"
+	"github.com/sqkam/xray-core/features/policy"
+	"github.com/sqkam/xray-core/features/stats"
+	"github.com/sqkam/xray-core/proxy"
+	"github.com/sqkam/xray-core/transport"
+	"github.com/sqkam/xray-core/transport/internet"
+	"github.com/sqkam/xray-core/transport/internet/stat"
+	"github.com/sqkam/xray-core/transport/internet/tls"
 )
 
 var useSplice bool
@@ -509,7 +509,7 @@ func (f *FragmentWriter) Write(b []byte) (int, error) {
 	}
 }
 
-// stolen from github.com/xtls/xray-core/transport/internet/reality
+// stolen from github.com/sqkam/xray-core/transport/internet/reality
 func randBetween(left int64, right int64) int64 {
 	if left == right {
 		return left

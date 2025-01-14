@@ -5,14 +5,14 @@ import (
 
 	"sync"
 
-	"github.com/xtls/xray-core/app/observatory"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/signal/done"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/routing"
+	"github.com/sqkam/xray-core/app/observatory"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/signal/done"
+	"github.com/sqkam/xray-core/core"
+	"github.com/sqkam/xray-core/features/extension"
+	"github.com/sqkam/xray-core/features/outbound"
+	"github.com/sqkam/xray-core/features/routing"
 	"google.golang.org/protobuf/proto"
 )
 

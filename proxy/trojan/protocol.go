@@ -4,10 +4,10 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
+	"github.com/sqkam/xray-core/common/buf"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/protocol"
 )
 
 var (

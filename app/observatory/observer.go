@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	v2net "github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal/done"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport/internet/tagged"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/errors"
+	v2net "github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/session"
+	"github.com/sqkam/xray-core/common/signal/done"
+	"github.com/sqkam/xray-core/common/task"
+	"github.com/sqkam/xray-core/core"
+	"github.com/sqkam/xray-core/features/extension"
+	"github.com/sqkam/xray-core/features/outbound"
+	"github.com/sqkam/xray-core/features/routing"
+	"github.com/sqkam/xray-core/transport/internet/tagged"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -32,7 +32,7 @@ type Observer struct {
 
 	finished *done.Instance
 
-	ohm outbound.Manager
+	ohm        outbound.Manager
 	dispatcher routing.Dispatcher
 }
 
@@ -226,9 +226,9 @@ func New(ctx context.Context, config *Config) (*Observer, error) {
 		return nil, errors.New("Cannot get depended features").Base(err)
 	}
 	return &Observer{
-		config: config,
-		ctx:    ctx,
-		ohm:    outboundManager,
+		config:     config,
+		ctx:        ctx,
+		ohm:        outboundManager,
 		dispatcher: dispatcher,
 	}, nil
 }

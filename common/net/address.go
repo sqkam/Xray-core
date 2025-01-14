@@ -6,7 +6,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/errors"
 )
 
 var (

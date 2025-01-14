@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/common/protocol"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/platform"
+	"github.com/sqkam/xray-core/common/protocol"
 )
 
 type StringList []string

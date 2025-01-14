@@ -3,10 +3,10 @@ package command
 import (
 	"context"
 
-	"github.com/xtls/xray-core/app/observatory"
-	"github.com/xtls/xray-core/common"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
+	"github.com/sqkam/xray-core/app/observatory"
+	"github.com/sqkam/xray-core/common"
+	core "github.com/sqkam/xray-core/core"
+	"github.com/sqkam/xray-core/features/extension"
 	"google.golang.org/grpc"
 )
 

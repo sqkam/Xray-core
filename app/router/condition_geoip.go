@@ -4,7 +4,7 @@ import (
 	"net/netip"
 	"strconv"
 
-	"github.com/xtls/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/net"
 	"go4.org/netipx"
 )
 

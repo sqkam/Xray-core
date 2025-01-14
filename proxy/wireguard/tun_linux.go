@@ -14,8 +14,8 @@ import (
 	"golang.org/x/sys/unix"
 
 	"github.com/sagernet/sing/common/control"
+	"github.com/sqkam/xray-core/common/errors"
 	"github.com/vishvananda/netlink"
-	"github.com/xtls/xray-core/common/errors"
 	wgtun "golang.zx2c4.com/wireguard/tun"
 )
 

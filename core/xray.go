@@ -5,19 +5,19 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/features"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/dns/localdns"
-	"github.com/xtls/xray-core/features/inbound"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/transport/internet"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/platform"
+	"github.com/sqkam/xray-core/common/serial"
+	"github.com/sqkam/xray-core/features"
+	"github.com/sqkam/xray-core/features/dns"
+	"github.com/sqkam/xray-core/features/dns/localdns"
+	"github.com/sqkam/xray-core/features/inbound"
+	"github.com/sqkam/xray-core/features/outbound"
+	"github.com/sqkam/xray-core/features/policy"
+	"github.com/sqkam/xray-core/features/routing"
+	"github.com/sqkam/xray-core/features/stats"
+	"github.com/sqkam/xray-core/transport/internet"
 )
 
 // Server is an instance of Xray. At any time, there must be at most one Server instance running.
@@ -359,7 +359,7 @@ func (s *Instance) AddFeature(feature features.Feature) error {
 	}
 	s.pendingOptionalResolutions = pendingOptional
 	s.resolveLock.Unlock()
-	
+
 	var err error
 	for _, r := range availableResolution {
 		err = r.callbackResolution(s.features) // only return the last error for now

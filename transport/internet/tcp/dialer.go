@@ -3,13 +3,13 @@ package tcp
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/transport/internet"
+	"github.com/sqkam/xray-core/transport/internet/reality"
+	"github.com/sqkam/xray-core/transport/internet/stat"
+	"github.com/sqkam/xray-core/transport/internet/tls"
 )
 
 // Dial dials a new TCP connection to the given destination.

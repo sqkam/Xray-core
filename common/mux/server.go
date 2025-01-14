@@ -4,17 +4,17 @@ import (
 	"context"
 	"io"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/log"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/pipe"
+	"github.com/sqkam/xray-core/common"
+	"github.com/sqkam/xray-core/common/buf"
+	"github.com/sqkam/xray-core/common/errors"
+	"github.com/sqkam/xray-core/common/log"
+	"github.com/sqkam/xray-core/common/net"
+	"github.com/sqkam/xray-core/common/protocol"
+	"github.com/sqkam/xray-core/common/session"
+	"github.com/sqkam/xray-core/core"
+	"github.com/sqkam/xray-core/features/routing"
+	"github.com/sqkam/xray-core/transport"
+	"github.com/sqkam/xray-core/transport/pipe"
 )
 
 type Server struct {
